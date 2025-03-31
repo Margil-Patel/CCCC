@@ -1,0 +1,9 @@
+flask 
+flask-sqlalchemy 
+flask-login 
+flask-wtf 
+werkzeug
+mysql-connector-python
+pymysql
+Flask
+flask-bcrypt

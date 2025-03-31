@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Authentication</title>
+</head>
+<body>
+    <h1>Welcome to Flask Authentication System</h1>
+
+    {% if session['user_id'] %}
+    <p>Welcome, {{ session['user_name'] }}! You are logged in.</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+{% else %}
+    <a href="{{ url_for('login') }}">Login</a>
+    <a href="{{ url_for('register') }}">Register</a>
+{% endif %}
+
+
+</body>
+</html>
